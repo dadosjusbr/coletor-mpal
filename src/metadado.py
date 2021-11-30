@@ -7,6 +7,7 @@ def captura():
     metadado.nao_requer_captcha = True
     metadado.acesso = Coleta.Metadados.FormaDeAcesso.AMIGAVEL_PARA_RASPAGEM
     metadado.extensao = Coleta.Metadados.Extensao.ODS
+    # Planilhas não seguem o padrão tabular (linha sendo variável e coluna sendo valor), apresentam títulos e comentários
     metadado.estritamente_tabular = False
     metadado.formato_consistente = True
     metadado.tem_matricula = True
