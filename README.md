@@ -1,3 +1,5 @@
+![Docker](https://github.com/dadosjusbr/coletor-mpal/actions/workflows/docker-publish.yml/badge.svg) 
+
 # Ministério Público de Alagoas (MPAL)
 Este coletor tem como objetivo a recuperação de informações sobre folhas de pagamentos dos funcionários do Ministério Público de Alagoas. O site com as informações pode ser acessado [aqui](https://sistemas.mpal.mp.br/transparencia/contracheque?tipo=membrosativos&id=65).
 
