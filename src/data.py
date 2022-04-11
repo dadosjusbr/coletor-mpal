@@ -12,6 +12,9 @@ def _read(file):
     try:
         data = pd.read_excel(file, engine="odf").to_numpy()
     except Exception as excep:
+        if excep.args[0] == "File is not a zip file":
+            print(f"Planilhas vazias: {excep}", file=sys.stderr)
+            sys.exit(STATUS_DATA_UNAVAILABLE)
         print(f"Erro lendo as planilhas: {excep}", file=sys.stderr)
         sys.exit(STATUS_INVALID_FILE)
     return data
